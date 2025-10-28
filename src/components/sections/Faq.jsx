@@ -18,12 +18,12 @@ export default function Faq({ colorMode }) {
     dark: "bg-bgFixedDark",
     // light: "bg-bgSectionOpacityLight",
     light: "squares",
-    default: "squares",
+    default: "bg-bgSectionDark",
   };
   const textClasses = {
     dark: "text-white",
     light: "text-secondary",
-    default: "text-black",
+    default: "text-white",
   };
   const bgClass = bgClasses[colorMode] || bgClasses.default;
   const titleColor = textClasses[colorMode] || textClasses.default;

@@ -11,16 +11,17 @@
       "home": "Início",
       "service": "Serviços",
       "about": "Sobre Nós",
+      "maps": "Mapa",
       "faq": "Perguntas Frequentes"
     },
     "ctaButtonText": "Contato",
-    "ctaButtonTextResponsive": "Contato"
+    "ctaButtonTextResponsive": "(21) 98217-7696"
   },
   "hero": {
     "miniTag": "CONSULTORIA E ADVOCACIA JURÍDICA",
-    "title": "Advocacia Trabalhista com coragem <span class=\"text-primary font-bold\">e propósito!</span>",
+    "title": "Advocacia Trabalhista com <span class=\"text-primary font-bold\">coragem</span> e <span class=\"text-primary font-bold\"> propósito</span>!",
     "subtitle": "Defesa firme dos direitos do trabalhador e aposentados, com ética, proximidade e resultados reais.",
-    "ctaButtonText": "Fale conosco agora",
+    "ctaButtonText": "Fale conosco agora (21) 98217-7696",
     "obsHero": {
       "text": "Atendimento online, por WhatsApp e presencial"
     }
@@ -75,9 +76,9 @@
   },
   "maps": {
     "minitag": "LOCALIZAÇÃO",
-    "title": "A_Definir",
-    "subtitle": "A_Definir",
-    "embedsrc": "A_Definir"
+    "title": "Encontre-nos em Niterói - RJ",
+    "subtitle": "Visite nosso endereço e confira no mapa abaixo como chegar facilmente.",
+    "embedsrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5382423918186!2d-43.1185214!3d-22.89351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983c23af6691f%3A0xb303e21cca4f4b22!2sOAB%20Niter%C3%B3i!5e0!3m2!1spt-BR!2sbr!4v1761660340787!5m2!1spt-BR!2sbr"
   },
   "about": {
     "imagem": {
@@ -87,7 +88,7 @@
     "title": "Nossa trajetória",
     "subtitle": "Compromisso e experiência na defesa dos seus direitos previdenciários e trabalhistas.",
     "buttonModalLabelAbout": "Continuar lendo",
-    "paragraph": "Somos especialistas em casos previdenciários e trabalhistas, atuando em aposentadorias, pensões, benefícios do INSS, rescisões, horas extras, assédio moral e outros conflitos do trabalho. Nosso trabalho vai além do básico: oferecemos um atendimento estratégico e personalizado, analisando cada detalhe do seu caso.",
+    "paragraph": "Dra. Fabiana G. de Almeida, advogada, com vasta experiência na área do direito trabalhista, previdenciário, cível e condominial, oferecendo defesa especializada em  diversas áreas, com registro na OAB/RJ n.° 246.225, ela dedica sua carreira a garantir justiça e proteção para seus clientes, atuando com excelência nos processos judiciais e extrajudiciais.",
     "modal": "Somos especialistas em casos previdenciários e trabalhistas, atuando em aposentadorias, pensões, benefícios do INSS, rescisões, horas extras, assédio moral e outros conflitos do trabalho. Nosso trabalho vai além do básico: oferecemos um atendimento estratégico e personalizado, analisando cada detalhe do seu caso. <br/><br/> Combinamos conhecimento técnico, experiência sólida e soluções inovadoras para garantir resultados justos e concretos. Nossa trajetória é marcada por uma atuação firme, próxima e eficiente, sempre colocando a proteção dos seus direitos em primeiro lugar. <br/><br/> Se você procura um escritório que realmente entende o seu problema e luta por você, a Fabiana Gomes de Almeida Consultoria e Advocacia Jurídica é a escolha certa. <br/><br/>",
     "ctaButtonAriaLabel": " Quer saber mais sobre nós? Clique abaixo 👇",
     "ctaButtonText": "Entre em contato",
@@ -113,6 +114,11 @@
     "subtitleDireitaPartes": ["E N T R E", "E M", "C O N T A T O", "V I A"],
     "titleDireita": "WhatsApp",
     "ctaButtonText": "Entre em Contato"
+  },
+  "testimonials": {
+    "miniTag": "HISTÓRIAS REAIS",
+    "title": "A felicidade estampada em cada cliente",
+    "subtitle": "Exemplos de quem confiou no nosso trabalho."
   },
   "steps": {
     "miniTag": "PASSO A PASSO",

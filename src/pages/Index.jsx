@@ -60,8 +60,8 @@ export default function Index() {
       <Hero
         colorMode={colorMode}
         appDownloadButtons={false}
-        defaultHero={true}
-        influencer={false}
+        defaultHero={false}
+        influencer={true}
         panoramica={false}
       />
 
@@ -76,15 +76,16 @@ export default function Index() {
         iconsWithModal={false}
       />
 
-      <About modal={true} showGallery={false} colorMode={colorMode} />
+      <About modal={false} showGallery={false} colorMode={colorMode} />
       <AboutInstagram colorMode={colorMode} socialPrint={true} />
 
       {/* <News /> */}
       <CtaSecondary colorMode={colorMode} />
+      <Testimonial />
       <Steps colorMode={colorMode} />
       {/* <BlogPosts /> */}
       <Faq colorMode={colorMode} />
-      {/* <Maps colorMode={colorMode} /> */}
+      <Maps colorMode={colorMode} />
       <FooterSocial
         colorMode={colorMode}
         addres={false}

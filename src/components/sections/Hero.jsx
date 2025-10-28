@@ -116,18 +116,18 @@ export default function Hero({
       minititleColor: isMobile
         ? "bg-minititle text-black"
         : "bg-primary text-minititleDarkLabel",
-      titleTextColor: isMobile ? "text-primary" : "text-primary",
-      subtitleTextColor: isMobile ? "text-white" : "text-primary",
-      obsTextColorOverride: isMobile ? "text-white" : "text-primary",
+      titleTextColor: isMobile ? "text-white" : "text-white",
+      subtitleTextColor: isMobile ? "text-white" : "text-white",
+      obsTextColorOverride: isMobile ? "text-white" : "text-white",
     });
   } else if (influencer) {
     HeroContent = renderHeroContent({
       minititleColor: isMobile
-        ? "bg-minititle text-white"
+        ? "bg-minititle text-black"
         : "bg-primary text-minititleDarkLabel",
-      titleTextColor: isMobile ? "text-primary" : "text-primary",
-      subtitleTextColor: "text-primary",
-      obsTextColorOverride: "text-primary",
+      titleTextColor: isMobile ? "text-white" : "text-white",
+      subtitleTextColor: "text-white",
+      obsTextColorOverride: "text-white",
     });
   } else {
     HeroContent = renderHeroContent({
@@ -246,7 +246,7 @@ export default function Hero({
                   <div className="flex  flex-col w-full desktop1:w-[50%] desktop1:mr-[20px]">
                     <MotionDivDownToUp>
                       <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                        <p className="mb-[16px] bg-minititleDarkLabel text-primary bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                        <p className="mb-[16px] bg-minititle bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
                           {t("hero.miniTag")}
                         </p>
                       </div>
@@ -338,13 +338,13 @@ export default function Hero({
                       <div className="flex flex-col w-full desktop1:w-[50%] ">
                         <MotionDivDownToUp>
                           <div className="flex justify-center w-auto text-center desktop1:justify-start desktop1:text-left font-secondFont text-paragraph4">
-                            <p className="mb-[16px] bg-primary text-minititleDarkLabel bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
+                            <p className="mb-[16px] bg-minititleDark text-black bg-opacity-100 rounded-md px-[16px] py-[6px] inline-block text-paragraph2">
                               {t("hero.miniTag")}
                             </p>
                           </div>
                         </MotionDivDownToUp>
                         <MotionDivDownToUp>
-                          <div className="text-primary flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
+                          <div className="text-white flex justify-center desktop1:justify-start font-bold leading-[40px] phone3:leading-[42px] tablet1:leading-[70px] desktop1:leading-[60px] desktop2:leading-[65px] text-center desktop1:text-left text-title4 phone2:text-title5 phone3:text-title5 tablet1:text-title7">
                             <h1>
                               <span
                                 dangerouslySetInnerHTML={{
@@ -356,7 +356,7 @@ export default function Hero({
                         </MotionDivDownToUp>
                         <MotionDivDownToUp>
                           <div className="flex justify-center w-full text-center desktop1:text-left desktop1:justify-start font-secondFont text-paragraph4 phone3:text-paragraph5">
-                            <p className="text-primary mb-[32px] ">
+                            <p className="text-white mb-[32px] ">
                               {t("hero.subtitle")}{" "}
                             </p>
                           </div>
@@ -383,9 +383,9 @@ export default function Hero({
                           </div>
                           <MotionDivDownToUp>
                             <div className="flex justify-center desktop1:justify-start">
-                              <div className="flex flex-col items-center desktop1:flex-row text-primary">
+                              <div className="flex flex-col items-center desktop1:flex-row text-white">
                                 {content.texts.hero.obsHero.icon}
-                                <p className="text-primary  ml-[10px] text-center mt-[12px] desktop1:mt-0">
+                                <p className="text-white  ml-[10px] text-center mt-[12px] desktop1:mt-0">
                                   {t("hero.obsHero.text")}{" "}
                                 </p>
                               </div>
