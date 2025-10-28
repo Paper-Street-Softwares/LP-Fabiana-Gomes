@@ -60,8 +60,8 @@ export default function Index() {
       <Hero
         colorMode={colorMode}
         appDownloadButtons={false}
-        defaultHero={true}
-        influencer={false}
+        defaultHero={false}
+        influencer={true}
         panoramica={false}
       />
 

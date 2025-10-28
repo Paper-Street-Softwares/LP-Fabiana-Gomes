@@ -25,8 +25,8 @@ export default function Button({
   // Define estilos com base no tamanho
   let textSizeClass = "";
   if (size === "small") {
-    sizeFeatures = "rounded-[4px] px-[18px] py-[10px]";
-    textSizeClass = "text-paragraph3 font-secondFont";
+    sizeFeatures = "rounded-[4px] px-[18px] py-[10px] w-[140px]";
+    textSizeClass = "text-paragraph1 desktop1:text-paragraph1 font-secondFont";
     gap = "gap-[10px]";
   } else {
     sizeFeatures = "rounded-[8px] px-[30px] py-[16px]";
