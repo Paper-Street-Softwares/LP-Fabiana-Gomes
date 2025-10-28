@@ -65,18 +65,20 @@ export default function Testimonial({ colorMode }) {
                   “Foram muito atenciosos comigo, consegui o meu benefício,
                   graças a Deus aposentado”
                 </span>{" "}
+                <br />
                 - (Carlos Santana)
                 <br /> <br />
                 <span className="text-title1 text-white">
                   “Entrei em contato com eles pelo whatsapp, foram muito
                   prestativos estamos resolvendo meu processo”
                 </span>
+                <br />
                 - (Edson Fábio)
                 <br /> <br />
                 <span className="text-title1 text-white">
                   “Consegui a minha recisão graças a eles, muito bons”
                 </span>
-                - (Luísa de Souza)
+                <br />- (Luísa de Souza)
               </p>
             </div>
 
