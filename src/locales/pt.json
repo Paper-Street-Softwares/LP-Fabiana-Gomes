@@ -87,7 +87,7 @@
     "title": "Nossa trajetória",
     "subtitle": "Compromisso e experiência na defesa dos seus direitos previdenciários e trabalhistas.",
     "buttonModalLabelAbout": "Continuar lendo",
-    "paragraph": "Somos especialistas em casos previdenciários e trabalhistas, atuando em aposentadorias, pensões, benefícios do INSS, rescisões, horas extras, assédio moral e outros conflitos do trabalho. Nosso trabalho vai além do básico: oferecemos um atendimento estratégico e personalizado, analisando cada detalhe do seu caso.",
+    "paragraph": "Dra. Fabiana G. de Almeida, advogada, com vasta experiência na área do direito trabalhista, previdenciário, cível e condominial, oferecendo defesa especializada em  diversas áreas, com registro na OAB/RJ n.° 246.225, ela dedica sua carreira a garantir justiça e proteção para seus clientes, atuando com excelência nos processos judiciais e extrajudiciais.",
     "modal": "Somos especialistas em casos previdenciários e trabalhistas, atuando em aposentadorias, pensões, benefícios do INSS, rescisões, horas extras, assédio moral e outros conflitos do trabalho. Nosso trabalho vai além do básico: oferecemos um atendimento estratégico e personalizado, analisando cada detalhe do seu caso. <br/><br/> Combinamos conhecimento técnico, experiência sólida e soluções inovadoras para garantir resultados justos e concretos. Nossa trajetória é marcada por uma atuação firme, próxima e eficiente, sempre colocando a proteção dos seus direitos em primeiro lugar. <br/><br/> Se você procura um escritório que realmente entende o seu problema e luta por você, a Fabiana Gomes de Almeida Consultoria e Advocacia Jurídica é a escolha certa. <br/><br/>",
     "ctaButtonAriaLabel": " Quer saber mais sobre nós? Clique abaixo 👇",
     "ctaButtonText": "Entre em contato",
@@ -113,6 +113,11 @@
     "subtitleDireitaPartes": ["E N T R E", "E M", "C O N T A T O", "V I A"],
     "titleDireita": "WhatsApp",
     "ctaButtonText": "Entre em Contato"
+  },
+  "testimonials": {
+    "miniTag": "HISTÓRIAS REAIS",
+    "title": "A felicidade estampada em cada cliente",
+    "subtitle": "Exemplos de quem confiou no nosso trabalho."
   },
   "steps": {
     "miniTag": "PASSO A PASSO",

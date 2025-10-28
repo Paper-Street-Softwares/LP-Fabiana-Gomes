@@ -22,10 +22,10 @@ export default function Testimonial({ colorMode }) {
   const { t } = useTranslation();
 
   // Array de imagens
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8];
+  const images = [img1, img2];
 
   // Lógica de cores conforme o modo
-  const bgColor = colorMode === "light" ? "bg-white" : "bg-secondary";
+  const bgColor = colorMode === "light" ? "bg-white" : "bg-bgSectionDark";
   const textColor = colorMode === "light" ? "text-black" : "text-white";
   const arrowColor = colorMode === "light" ? "#000000" : "#FFFFFF";
 
@@ -38,14 +38,14 @@ export default function Testimonial({ colorMode }) {
 
   // Configuração responsiva
   const responsiveOptions = [
-    { breakpoint: "2500px", numVisible: 3, numScroll: 3 },
-    { breakpoint: "1199px", numVisible: 3, numScroll: 3 },
-    { breakpoint: "767px", numVisible: 2, numScroll: 2 },
+    { breakpoint: "2500px", numVisible: 1, numScroll: 3 },
+    { breakpoint: "1199px", numVisible: 1, numScroll: 3 },
+    { breakpoint: "767px", numVisible: 1, numScroll: 2 },
     { breakpoint: "575px", numVisible: 1, numScroll: 1 },
   ];
 
   return (
-    <SectionArea className={`${bgColor}`} paddingtop={true}>
+    <SectionArea className={`${bgColor}`} paddingbot={false}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
@@ -57,23 +57,47 @@ export default function Testimonial({ colorMode }) {
             subtitleColorSet={textColor}
           />
 
-          <div className="flex flex-col desktop1:flex-row items-center w-full justify-center gap-[32px] desktop1:mt-0">
-            <Carousel
-              value={images}
-              itemTemplate={itemTemplate}
-              responsiveOptions={responsiveOptions}
-              circular
-              autoplayInterval={3000}
-              showNavigators
-              showIndicators={false}
-              className="w-full custom-carousel"
-              prevIcon={
-                <span style={{ color: arrowColor, fontSize: "200%" }}>❮</span>
-              }
-              nextIcon={
-                <span style={{ color: arrowColor, fontSize: "200%" }}>❯</span>
-              }
-            />
+          <div className="flex flex-col desktop1:flex-row justify-between items-center gap-8">
+            <div className=" desktop1:w-[45%]">
+              <p className="text-primary text-center desktop1:text-start">
+                <span className="text-title1 text-white">
+                  {" "}
+                  “Foram muito atenciosos comigo, consegui o meu benefício,
+                  graças a Deus aposentado”
+                </span>{" "}
+                - (Carlos Santana)
+                <br /> <br />
+                <span className="text-title1 text-white">
+                  “Entrei em contato com eles pelo whatsapp, foram muito
+                  prestativos estamos resolvendo meu processo”
+                </span>
+                - (Edson Fábio)
+                <br /> <br />
+                <span className="text-title1 text-white">
+                  “Consegui a minha recisão graças a eles, muito bons”
+                </span>
+                - (Luísa de Souza)
+              </p>
+            </div>
+
+            <div className="flex flex-col desktop1:flex-row items-center justify-center gap-[32px] desktop1:mt-0 desktop1:w-[45%]">
+              <Carousel
+                value={images}
+                itemTemplate={itemTemplate}
+                responsiveOptions={responsiveOptions}
+                circular
+                autoplayInterval={3000}
+                showNavigators
+                showIndicators={false}
+                className="w-full custom-carousel"
+                prevIcon={
+                  <span style={{ color: arrowColor, fontSize: "200%" }}>❮</span>
+                }
+                nextIcon={
+                  <span style={{ color: arrowColor, fontSize: "200%" }}>❯</span>
+                }
+              />
+            </div>
           </div>
         </div>
       </SectionWrapper>
