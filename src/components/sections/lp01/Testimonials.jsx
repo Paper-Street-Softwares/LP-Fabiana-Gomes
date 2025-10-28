@@ -45,7 +45,7 @@ export default function Testimonial({ colorMode }) {
   ];
 
   return (
-    <SectionArea className={`${bgColor}`} paddingbot={false}>
+    <SectionArea className={`${bgColor}`}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
