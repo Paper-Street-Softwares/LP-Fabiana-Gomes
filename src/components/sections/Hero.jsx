@@ -213,14 +213,19 @@ export default function Hero({
             </div>
 
             {/* Desktop */}
+
             <div
               className="hidden w-full bg-bottom bg-repeat bg-cover desktop1:flex font-mainFont"
               style={{
                 backgroundImage: `url(${content.texts.hero.heroDesktop})`,
+                backgroundSize: "1920px auto", // largura máxima da imagem
               }}
             >
+              <div className="-full max-w-[1440px] mx-auto relative"></div>
               <SectionArea paddingTopAndBottom={false} className="relative">
                 <div className="absolute inset-0 w-[65%] h-full bg-gradient-to-r from-darker to-transparent" />
+                <div className="absolute hidden desktopFull:flex right-0 top-0 w-[40%] h-full bg-gradient-to-l from-black to-transparent" />
+
                 <SectionWrapper>
                   <div className="relative z-10 flex w-full items-left pt-[36px] desktop1:py-[90px] desktop2:pb-[90px]">
                     <div className="w-full text-secondary">

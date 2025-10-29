@@ -49,6 +49,14 @@ export default function Button({
     ? getWhatsappLink()
     : buttonLink;
 
+  // 🔹 Função auxiliar para renderizar o label com HTML, se necessário
+  const renderLabel = () => {
+    if (typeof label === "string") {
+      return <span dangerouslySetInnerHTML={{ __html: label }} />;
+    }
+    return label; // Caso já seja um nó React
+  };
+
   return (
     <CustomTag
       tagName={CustomTagName}
@@ -71,11 +79,11 @@ export default function Button({
             >
               {icon && <div className={`${buttonColor}`}>{icon}</div>}
               <p
-                className={`flex items-center  ${textSizeClass} ${
+                className={`flex items-center ${textSizeClass} ${
                   labelColor || buttonColor
                 } ${textclassName}`}
               >
-                {label}
+                {renderLabel()}
               </p>
             </div>
           </button>
@@ -95,7 +103,7 @@ export default function Button({
                   labelColor || buttonColor
                 } ${textclassName}`}
               >
-                {label}
+                {renderLabel()}
               </p>
             </div>
           </button>
