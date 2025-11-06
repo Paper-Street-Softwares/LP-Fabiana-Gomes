@@ -20,6 +20,7 @@ export default function SectionHeader({
   animation = true,
   titleColorSet,
   subtitleColorSet,
+  style,
 }) {
   // Configurações baseadas no colorMode
   switch (colorMode) {
@@ -40,6 +41,8 @@ export default function SectionHeader({
 
   // Caso false, zera a classe
   if (miniTitleBgColor === false) miniTitleBgColor = "";
+  if (sectionHeaderTitle === false) sectionHeaderTitle = "";
+  if (sectionHeaderSubtitle === false) sectionHeaderSubtitle = "";
 
   // Configurações baseadas no tipo
   if (type === "article") {
@@ -55,7 +58,7 @@ export default function SectionHeader({
 
   const Content = (
     <div className={`${usage} ${className}`}>
-      <div>
+      {miniTitle && (
         <div className={`${miniTitleSpace}`}>
           <div
             className={`py-[4px] font-semibold px-[12px] font-mainFont text-paragraph2 rounded-md inline-block mb-[16px] ${miniTitleOrientation} ${miniTitleBgColor}`}
@@ -63,17 +66,23 @@ export default function SectionHeader({
             <p className={`${miniTitleTextColor} uppercase`}>{miniTitle}</p>
           </div>
         </div>
+      )}
+
+      {sectionHeaderTitle && (
         <h1
           className={`${titleColor} ${titleOrientation} text-title4 bg-transparent leading-[34px] tablet1:leading-[42px] tablet1:text-title5 font-mainFont font-bold mb-[16px]`}
         >
           {sectionHeaderTitle}
         </h1>
+      )}
+
+      {sectionHeaderSubtitle && (
         <p
           className={`text-title1 font-secondFont leading-[26px] bg-transparent ${marginBottomOption} ${subtitleOrientation} ${subtitleColor}`}
         >
           {sectionHeaderSubtitle}
         </p>
-      </div>
+      )}
     </div>
   );
 
