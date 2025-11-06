@@ -62,13 +62,12 @@ export default function About({ modal = true, showGallery, colorMode }) {
           <SectionHeader
             className="text-center"
             miniTitle={aboutText.miniTag}
-            sectionHeaderTitle={aboutText.title}
-            sectionHeaderSubtitle={aboutText.subtitle}
             color={colorMode}
             type="article"
             titleColorSet={titleColor}
             subtitleColorSet={subtitleColor}
           />
+
           <MotionDivDownToUp>
             {modal ? (
               <ParagraphWithFading colorMode={colorMode} />
@@ -99,6 +98,15 @@ export default function About({ modal = true, showGallery, colorMode }) {
               }
             /> */}
           </MotionDivDownToUp>
+          <SectionHeader
+            className="text-center pt-6"
+            sectionHeaderTitle={aboutText.title}
+            sectionHeaderSubtitle={aboutText.subtitle}
+            color={colorMode}
+            type="article"
+            titleColorSet={titleColor}
+            subtitleColorSet={subtitleColor}
+          />
         </div>
       </SectionWrapper>
     </SectionArea>
