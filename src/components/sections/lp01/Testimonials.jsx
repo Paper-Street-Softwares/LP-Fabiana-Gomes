@@ -45,7 +45,7 @@ export default function Testimonial({ colorMode }) {
   ];
 
   return (
-    <SectionArea className={`${bgColor}`}>
+    <SectionArea className={`${bgColor}`} paddingbot={false}>
       <SectionWrapper className="flex flex-col gap-[40px] desktop2:gap-0 desktop1:justify-between">
         <div className="w-full">
           <SectionHeader
@@ -59,7 +59,7 @@ export default function Testimonial({ colorMode }) {
 
           <div className="flex flex-col desktop1:flex-row justify-between items-center gap-8">
             <div className=" desktop1:w-[45%]">
-              <p className="text-primary text-center desktop1:text-start">
+              <p className="text-primary text-center desktop1:text-start font-secondFont">
                 <span className="text-title1 text-white">
                   {" "}
                   “Foram muito atenciosos comigo, consegui o meu benefício,
