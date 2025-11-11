@@ -107,7 +107,7 @@ export const infos = {
     </div>
   ),
   obs: <span className="italic">A Definir</span>,
-  instagramProfile: "fabianaadvocacia", // Sem o @
+  instagramProfile: "fg.advogada", // Sem o @
   facebookProfile: "",
   linkeDinProfile: "",
   x: "",
