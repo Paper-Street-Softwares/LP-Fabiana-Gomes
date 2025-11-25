@@ -22,7 +22,7 @@ export default function Testimonial({ colorMode }) {
   const { t } = useTranslation();
 
   // Array de imagens
-  const images = [img1, img2];
+  const images = [img1, img2, img3];
 
   // Lógica de cores conforme o modo
   const bgColor = colorMode === "light" ? "bg-white" : "bg-bgSectionDark";
@@ -38,9 +38,9 @@ export default function Testimonial({ colorMode }) {
 
   // Configuração responsiva
   const responsiveOptions = [
-    { breakpoint: "2500px", numVisible: 1, numScroll: 3 },
-    { breakpoint: "1199px", numVisible: 1, numScroll: 3 },
-    { breakpoint: "767px", numVisible: 1, numScroll: 2 },
+    { breakpoint: "2500px", numVisible: 1, numScroll: 1 },
+    { breakpoint: "1199px", numVisible: 1, numScroll: 1 },
+    { breakpoint: "767px", numVisible: 1, numScroll: 1 },
     { breakpoint: "575px", numVisible: 1, numScroll: 1 },
   ];
 
